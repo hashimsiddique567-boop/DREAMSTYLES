@@ -1069,3 +1069,248 @@ video {
     grid-template-columns: 1fr;
   }
 }
+@media (max-width: 760px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header {
+    top: 10px;
+    width: calc(100% - 24px);
+    min-height: 64px;
+    padding: 10px 14px;
+    border-radius: 20px;
+  }
+
+  .logo span {
+    font-size: 1rem;
+  }
+
+  .logo small {
+    font-size: 0.48rem;
+  }
+
+  .menu-btn {
+    display: grid;
+    place-items: center;
+  }
+
+  .nav {
+    position: absolute;
+    top: 78px;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+    border-radius: 20px;
+    background: rgba(255, 253, 247, 0.98);
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow);
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .nav a {
+    width: 100%;
+    text-align: center;
+    padding: 13px 14px;
+  }
+
+  .hero {
+    min-height: 100svh;
+    padding: 0 20px;
+  }
+
+  .hero-content {
+    padding: 120px 0 60px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.65rem, 17vw, 4.1rem);
+    line-height: 0.9;
+    letter-spacing: -0.08em;
+  }
+
+  .hero h2 {
+    font-size: 1.15rem;
+    line-height: 1.25;
+  }
+
+  .hero p {
+    font-size: 0.94rem;
+    line-height: 1.7;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .hero-pills {
+    gap: 8px;
+  }
+
+  .hero-pills span {
+    font-size: 0.78rem;
+    padding: 9px 11px;
+  }
+
+  .feature-strip {
+    margin: -20px 16px 0;
+    grid-template-columns: 1fr;
+    padding: 18px;
+    border-radius: 24px;
+  }
+
+  .feature-strip div {
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .feature-strip div:last-child {
+    border-bottom: 0;
+  }
+
+  .section {
+    padding: 72px 18px;
+  }
+
+  .section-head {
+    margin-bottom: 32px;
+  }
+
+  .section-head h2,
+  .video-section h2,
+  .rsvp-section h2,
+  .contact-card h2 {
+    font-size: clamp(2.2rem, 12vw, 3.3rem);
+    line-height: 0.96;
+  }
+
+  .collection-grid,
+  .gallery-grid,
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .gallery-card {
+    min-height: auto;
+    height: auto;
+    padding: 12px 12px 76px;
+    border-radius: 24px;
+  }
+
+  .gallery-card img {
+    height: auto;
+    max-height: 560px;
+    object-fit: contain;
+    border-radius: 18px;
+  }
+
+  .gallery-card span {
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+  }
+
+  .video-layout {
+    padding: 22px;
+    border-radius: 26px;
+    grid-template-columns: 1fr;
+  }
+
+  .video-phone {
+    max-width: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 26px;
+  }
+
+  .video-phone video {
+    height: auto;
+    max-height: 78vh;
+    aspect-ratio: 9 / 16;
+    object-fit: contain;
+    border-radius: 20px;
+  }
+
+  .video-info h3 {
+    font-size: 2rem;
+  }
+
+  .rsvp-section {
+    margin: 0 18px;
+    padding: 26px 20px;
+    grid-template-columns: 1fr;
+    border-radius: 26px;
+  }
+
+  .phone-preview {
+    min-height: 360px;
+  }
+
+  .pricing-grid article.featured {
+    transform: none;
+  }
+
+  .offers-panel {
+    grid-template-columns: 1fr;
+    padding: 22px;
+    border-radius: 26px;
+  }
+
+  .contact-card {
+    grid-template-columns: 1fr;
+    padding: 24px 18px;
+    border-radius: 26px;
+    gap: 24px;
+  }
+
+  .contact-note {
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .form {
+    padding: 20px;
+    border-radius: 22px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .form input,
+  .form select,
+  .form textarea {
+    font-size: 16px;
+  }
+
+  .lightbox {
+    padding: 16px;
+  }
+
+  .lightbox-content {
+    width: 100%;
+  }
+
+  .lightbox-content img {
+    max-height: 78vh;
+    border-radius: 18px;
+  }
+
+  .lightbox-close {
+    top: 14px;
+    right: 14px;
+  }
+}
