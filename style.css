@@ -34,6 +34,7 @@ body {
   overflow-x: hidden;
 }
 
+
 a {
   color: inherit;
   text-decoration: none;
@@ -1816,5 +1817,116 @@ video {
   .lightbox-close {
     top: 14px;
     right: 14px;
+  }
+}
+/* FINAL PHONE + LOGO FIX */
+@media (max-width: 760px) {
+  .header {
+    top: 10px !important;
+    width: calc(100% - 20px) !important;
+    min-height: 58px !important;
+    padding: 9px 12px !important;
+    border-radius: 18px !important;
+  }
+
+  .logo span {
+    font-size: 0.92rem !important;
+    letter-spacing: -0.04em !important;
+  }
+
+  .logo small {
+    font-size: 0.44rem !important;
+    letter-spacing: 0.16em !important;
+  }
+
+  .hero {
+    min-height: 100svh !important;
+    padding: 0 18px !important;
+  }
+
+  .hero-content {
+    padding: 115px 0 48px !important;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.3rem, 14vw, 3.6rem) !important;
+    line-height: 0.92 !important;
+    letter-spacing: -0.07em !important;
+  }
+
+  .hero h2 {
+    font-size: 1.05rem !important;
+    line-height: 1.28 !important;
+  }
+
+  .hero p {
+    font-size: 0.9rem !important;
+    line-height: 1.65 !important;
+  }
+
+  .hero-actions {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  .btn {
+    width: 100% !important;
+  }
+
+  .hero-pills {
+    gap: 7px !important;
+  }
+
+  .hero-pills span {
+    font-size: 0.73rem !important;
+    padding: 8px 10px !important;
+  }
+
+  .section {
+    padding: 68px 16px !important;
+  }
+
+  .section-head h2,
+  .video-section h2,
+  .rsvp-section h2,
+  .contact-card h2 {
+    font-size: clamp(2.15rem, 11vw, 3.1rem) !important;
+    line-height: 0.98 !important;
+  }
+
+  .gallery-grid,
+  .collection-grid,
+  .pricing-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .gallery-card {
+    min-height: auto !important;
+    padding: 12px 12px 76px !important;
+    border-radius: 24px !important;
+  }
+
+  .gallery-card img {
+    height: auto !important;
+    max-height: 560px !important;
+    object-fit: contain !important;
+  }
+
+  .video-layout,
+  .contact-card,
+  .offers-panel {
+    grid-template-columns: 1fr !important;
+    padding: 24px 18px !important;
+  }
+
+  .video-phone video {
+    height: auto !important;
+    max-height: 78vh !important;
+    aspect-ratio: 9 / 16 !important;
+    object-fit: contain !important;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr !important;
   }
 }
